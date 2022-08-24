@@ -9,17 +9,18 @@
     # Hardik Soni 20CS30023
 # ---------------------------------------------------------
 
-module Full_Adder(
-    input a,
-    input b,
-    input c_0,
-    output S,
-    output c
+module RCA_4_bit(
+    input [3:0] a,
+    input [3:0] b,
+    input c_in,
+    output [3:0] s,
+    output c_out
 );
 
-wire c1, c2, sum
-halfAdder ha1(a, b, sum, c1);
-halfAdder ha2(sum, c_0, S, c2);
-or gate1(c, c1, c2);
+wire[2:0] carry;
+Full_Adder fa1(a[0],b[0],c_in,s[0],carry[0]);
+Full_Adder fa2(a[1],b[1],carry[0],s[1],carry[1]);
+Full_Adder fa3(a[2],b[2],carry[1],s[2],carry[2]);
+Full_Adder fa4(a[3],b[3],carry[2],s[3],c_out);
 
 endmodule
