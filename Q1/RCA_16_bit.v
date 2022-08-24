@@ -17,4 +17,7 @@ module RCA_16_bit(
     output c_out
 );
 
-wire()
+wire carry;
+RCA_8_bit ra1(a[7:0], b[7:0], c_in, s[7:0], carry);
+RCA_8_bit ra2(a[15:8], b[15:8], carry, s[15:8], c_out);
+endmodule
