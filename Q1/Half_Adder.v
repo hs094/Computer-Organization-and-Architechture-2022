@@ -15,6 +15,7 @@ module Half_Adder(
     output s,
     output c
 );
+    // For Half-Adder s = a xor b and c = a and b 
 
     /*
     *     Inputs:             Outputs:
@@ -26,4 +27,5 @@ module Half_Adder(
 
     assign s = a ^ b;
     assign c = a & b; 
-end module
+
+endmodule
