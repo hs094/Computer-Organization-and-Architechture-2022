@@ -12,16 +12,16 @@
 module halfAdder(
     input a,
     input b,
-    output S,
-    output C
+    output s,
+    output c
 );
     /*
     *     Inputs:             Outputs:
-	*   a = 0, b = 0        S = 0, C = 0
-	*   a = 0, b = 1        S = 1, C = 0
-	*   a = 1, b = 0        S = 1, C = 0
-	*   a = 1, b = 1        S = 0, C = 1
+	*   a = 0, b = 0        s = 0, c = 0
+	*   a = 0, b = 1        s = 1, c = 0
+	*   a = 1, b = 0        s = 1, c = 0
+	*   a = 1, b = 1        s = 0, c = 1
     */
-    assign S = a ^ b;
-    assign C = a & b; 
+    assign s = a ^ b;
+    assign c = a & b; 
 end module
