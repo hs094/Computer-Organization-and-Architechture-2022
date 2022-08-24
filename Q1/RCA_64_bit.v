@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
 # ---------------------------------------------------------
+/* 
     # COMPUTER ORGANIZATION LABORATORY
     # AUTUMN SEMESTER 2022
     # Assignment 3
@@ -7,6 +8,7 @@
     # Group No. 60
     # Abhay Kumar Keshari 20CS10001
     # Hardik Soni 20CS30023
+*/
 # ---------------------------------------------------------
 
 module RCA_64_bit(
@@ -18,6 +20,10 @@ module RCA_64_bit(
 );
 
 wire carry;
+
+// Cascading 2 RCA_32_bit using carry wire
+
 RCA_32_bit ra1(a[31:0], b[31:0], c_in, s[31:0], carry);
 RCA_32_bit ra2(a[63:32], b[63:32], carry, s[63:32], c_out);
+
 endmodule

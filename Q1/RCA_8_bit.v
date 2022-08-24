@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
 # ---------------------------------------------------------
+/*
     # COMPUTER ORGANIZATION LABOfaTORY
     # AUTUMN SEMESTER 2022
     # Assignment 3
@@ -7,6 +8,7 @@
     # Group No. 60
     # Abhay Kumar Keshari 20CS10001
     # Hardik Soni 20CS30023
+*/
 # ---------------------------------------------------------
 
 module RCA_8_bit(
@@ -18,7 +20,10 @@ module RCA_8_bit(
 );
 
 // Carry Wire bus for internal temporary variable queries
+
 wire[6:0] carry;
+
+// Cascading 8 Full_Adders using carry wire
 
 Full_Adder fa1(a[0],b[0],c_in, s[0], carry[0]);
 Full_Adder fa2(a[1],b[1],carry[0], s[1], carry[1]);

@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
 # ---------------------------------------------------------
+/*
     # COMPUTER ORGANIZATION LABORATORY
     # AUTUMN SEMESTER 2022
     # Assignment 3
@@ -7,6 +8,7 @@
     # Group No. 60
     # Abhay Kumar Keshari 20CS10001
     # Hardik Soni 20CS30023
+*/
 # ---------------------------------------------------------
 
 module RCA_4_bit(
@@ -18,6 +20,7 @@ module RCA_4_bit(
 );
 
 wire[2:0] carry;
+// Cascading 4 Full_Adder using carry_wire
 Full_Adder fa1(a[0],b[0],c_in,s[0],carry[0]);
 Full_Adder fa2(a[1],b[1],carry[0],s[1],carry[1]);
 Full_Adder fa3(a[2],b[2],carry[1],s[2],carry[2]);
