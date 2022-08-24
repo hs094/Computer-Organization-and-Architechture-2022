@@ -9,4 +9,12 @@
     # Hardik Soni 20CS30023
 # ---------------------------------------------------------
 
-module
+module RCA_16_bit(
+    input [15:0] a,
+    input [15:0] b,
+    input c_in,
+    output [15:0] s,
+    output c_out
+);
+
+wire()
