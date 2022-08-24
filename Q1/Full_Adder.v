@@ -12,14 +12,14 @@
 module FullAdder(
     input a,
     input b,
-    input c_in,
+    input c_0,
     output S,
-    output c_out
+    output c
 );
 
 wire c1, c2, sum
 halfAdder ha1(a, b, sum, c1);
-halfAdder ha2(sum, c_in, S, c2);
-or gate1(c_out, c1, c2);
+halfAdder ha2(sum, c_0, S, c2);
+or gate1(c, c1, c2);
 
 endmodule
