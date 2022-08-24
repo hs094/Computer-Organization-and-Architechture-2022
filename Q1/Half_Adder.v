@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 # ---------------------------------------------------------
     # COMPUTER ORGANIZATION LABORATORY
     # AUTUMN SEMESTER 2022
