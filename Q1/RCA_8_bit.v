@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
-# ---------------------------------------------------------
 /*
+# ---------------------------------------------------------
     # COMPUTER ORGANIZATION LABOfaTORY
     # AUTUMN SEMESTER 2022
     # Assignment 3
@@ -8,8 +8,8 @@
     # Group No. 60
     # Abhay Kumar Keshari 20CS10001
     # Hardik Soni 20CS30023
-*/
 # ---------------------------------------------------------
+*/
 
 module RCA_8_bit(
     input [7:0] a,
