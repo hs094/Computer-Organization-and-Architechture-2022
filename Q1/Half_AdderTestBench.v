@@ -19,12 +19,12 @@ module Half_AdderTestBench;
     );
     initial begin
         $moniter ("a = %d, b = %d, s = %d, c = %d", a, b, s, c);
-        in1 = 0; in2 = 0;
+        a = 0; b = 0;
 		#100;
-		in1 = 1; in2 = 0;
+		a = 1; b = 0;
 		#100;
-		in1 = 0; in2 = 1;
+		a = 0; b = 1;
 		#100;
-		in1 = 1; in2 = 1;
+		a = 1; b = 1;
     end
 endmodule
