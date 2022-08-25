@@ -2,11 +2,11 @@
 
 module RCA_16_bitTestbench;
 
-    reg [15:0]a;
-    reg [15:0]b;
+    reg [15:0] a;
+    reg [15:0] b;
     reg c_in;
 
-    wire [15:0]s;
+    wire [15:0] s;
     wire c_out;
 
     RCA_16_bitTestbench uut(
