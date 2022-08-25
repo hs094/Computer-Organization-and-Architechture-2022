@@ -40,5 +40,4 @@ module Full_AdderTestBench;
 		#100;
 		a = 1; b = 1; c_0 = 1;
 	end
-
 endmodule

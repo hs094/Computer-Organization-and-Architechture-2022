@@ -22,14 +22,14 @@ module RCA_4_bitTestbench;
 
 
     initial begin 
-    $monitor ("a = %d, b = %d, c_in = %d, s = %d, c_out = %d", a, b, c_in, s, c_out);
+            $monitor ("a = %d, b = %d, c_in = %d, s = %d, c_out = %d", a, b, c_in, s, c_out);
         // Initialize Inputs
-		    a = 4'b0100; b = 4'b0100; c_in = 0;
+		    a = 4'b0100; b = 4'b0100; c_in = 1;
 		    #100;
-		    a = 4'b0100; b = 4'b1100; c_in = 0;
+		    a = 4'b0100; b = 4'b1100; c_in = 1;
 		    #100;
-		    a = 4'b0011; b = 4'b0010; c_in = 1;
+		    a = 4'b1011; b = 4'b0110; c_in = 0;
 		    #100;
-		    a = 4'b0001; b = 4'b0000; c_in = 1;
+		    a = 4'b0101; b = 4'b0100; c_in = 1;
     end
 endmodule
