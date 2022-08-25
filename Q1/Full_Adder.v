@@ -31,6 +31,6 @@ module Full_Adder(
 wire c1, c2, sum
 Half_Adder ha1(a, b, sum, c1);
 Half_Adder ha2(sum, c_0, S, c2);
-or g1(c, c1, c2);
+assign c = c1 | c2;
 
 endmodule
