@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+/*
 # ---------------------------------------------------------
     # COMPUTER ORGANIZATION LABORATORY
     # AUTUMN SEMESTER 2022
@@ -8,7 +9,7 @@
     # Abhay Kumar Keshari 20CS10001
     # Hardik Soni 20CS30023
 # ---------------------------------------------------------
-
+*/
 module Half_Adder(
     input a,
     input b,
