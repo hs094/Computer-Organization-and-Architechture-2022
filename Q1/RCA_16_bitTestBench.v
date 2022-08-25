@@ -9,7 +9,7 @@ module RCA_16_bitTestbench;
     wire [15:0] s;
     wire c_out;
 
-    RCA_16_bitTestbench uut(
+    RCA_16_bit uut(
         .a(a),
         .b(b),
         .c_in(c_in),

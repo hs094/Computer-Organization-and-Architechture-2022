@@ -9,7 +9,7 @@ module RCA_8_bitTestbench;
     wire [7:0]s;
     wire c_out;
 
-    RCA_8_bitTestbench uut(
+    RCA_8_bit uut(
         .a(a),
         .b(b),
         .c_in(c_in),

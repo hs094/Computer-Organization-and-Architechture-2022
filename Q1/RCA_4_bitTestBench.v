@@ -12,7 +12,7 @@ module RCA_4_bitTestbench;
     wire c_out;
 
 
-    RCA_4_bitTestbench(
+    RCA_4_bit uut(
         .a(a),
         .b(b),
         .c_in(c_in),

@@ -9,7 +9,7 @@ module RCA_64_bitTestbench;
     wire [63:0]s;
     wire c_out;
 
-    RCA_64_bitTestbench uut(
+    RCA_64_bit uut(
         .a(a),
         .b(b),
         .c_in(c_in),
