@@ -30,8 +30,8 @@ module CLA_4_bit(
 * P =  a ^ b
 * G =  a & b   
 * Expanding for i,
-* P[i] = a[i] & b[i] for all 0<=i<=3
-* G[i] = a[i] ^ b[i] for all 0<=i<=3
+* P[i] = a[i] ^ b[i] for all 0<=i<=3
+* G[i] = a[i] & b[i] for all 0<=i<=3
 * 
 * Initialize C[0] to be c_in
 * Then Recursively we can:-
@@ -39,11 +39,10 @@ module CLA_4_bit(
 * C[i] = G[i-1] | (P[i-1] & C[i-1]) for all 1<=i<=4
 * C0 = c_in
 * C1 = G[0] | (P[0] & c_in)
-* C2 = G[1] | (P[1] & C[1]) = G[1] | (P[1] & (G[0] | (P[0] & c_in))) = G[1] | (P1 & G[0]) | (P[1] & P[0] & c_in)
-* C3 = G[2] | (P[2] & C[2]) = G[2] | (P[2] & G[1]) | (P[2] & P[1] & G[0]) | (P[2] & P[1] & P[0] & c_in)
-* C4 = G[3] | (P[3] & C[3]) = G[3] | (P[3] & G[2]) | (P[3] & P[2] & G[1]) | (P[3] & P[2] & P[1] & G[0]) | (P[3] & P[2] & P[1] & P[0] & c_in)
+* C2 = G[1] | (P[1] & C1) = G[1] | (P[1] & (G[0] | (P[0] & c_in))) = G[1] | (P1 & G[0]) | (P[1] & P[0] & c_in)
+* C3 = G[2] | (P[2] & C2) = G[2] | (P[2] & G[1]) | (P[2] & P[1] & G[0]) | (P[2] & P[1] & P[0] & c_in)
+* C4 = G[3] | (P[3] & C3) = G[3] | (P[3] & G[2]) | (P[3] & P[2] & G[1]) | (P[3] & P[2] & P[1] & G[0]) | (P[3] & P[2] & P[1] & P[0] & c_in)
 * c_out = C4
-* s = 
 */
 
 wire [3:0] P,G;

@@ -23,6 +23,13 @@ module CLA_4_bit_TestBench;
     wire [3:0] s;
     wire c_out;
 
+    CLA_4_bit uut(
+        .a(a),
+        .b(b),
+        .c_in(c_in),
+        .s(s),
+        .c_out(c_out)
+    );
 initial begin 
     $moniter("a = %d, b = %d, c_in = %d, s = %d, c_out = %d", a, b, c_in, s, c_out);
     // Inititalize the Test Cases
