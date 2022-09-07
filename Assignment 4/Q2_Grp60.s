@@ -184,7 +184,7 @@ print:
         li      $v0, 1      
         move    $a0, $t1    
         syscall             
-        li      $v0, 11     
+        li      $v0,      
         li      $a0, 32     
         syscall
         addi    $t0, $t0, 1 
