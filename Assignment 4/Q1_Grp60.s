@@ -1,8 +1,8 @@
 # ---------------------------------------------------------
     # COMPUTER ORGANIZATION LABORATORY
     # AUTUMN SEMESTER 2022
-    # Assignment 2
-    # Problem 3
+    # Assignment 4
+    # Problem 1
     # Group No. 60
     # Abhay Kumar Keshari 20CS10001
     # Hardik Soni 20CS30023
@@ -184,15 +184,14 @@ determinant:
         move    $a3, $s1
         jal     subMatrix
 
-        
+        addi    $a0, $s0, -1
+        move    $a1, $s1
+        jal     determinant
+
         lw      $t0, -28($fp)
         sll     $t1, $s3, 2
         add     $t1, $t0, $t1 
         lw      $t2, 0($t1)
-
-        addi    $a0, $s0, -1
-        move    $a1, $s1
-        jal     determinant
 
         mul     $t3, $t2, $v0 
         andi    $t4, $s3, 1
