@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module bin_sync_behav(clock, reset_counter, out);
+module bin_counter_Behavioral(clock, reset_counter, out);
 
 input clock;                  // Declare input port for the clock to allow counter to count up  
 input reset_counter;          // Declare input port for the reset to allow the counter to be reset to 0 when required  
