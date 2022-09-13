@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module add_by_one(
     input [0:3] in,
     output [0:3] out
