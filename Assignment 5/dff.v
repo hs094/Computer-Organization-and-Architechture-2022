@@ -1,7 +1,15 @@
-module dff (input d, input reset, input clock, output q);  
-    always @ (posedge clock or negedge reset)  
-       if (!reset)  
-          q <= 0;  
-       else  
-          q <= d;  
-endmodule  
+module dff(
+    input d,
+    input rstn,
+    input clk,
+    output reg q;
+    );
+    always@(posedge clk or negedge rstn) begin
+        if(!rstn) begin
+            q <= 1'b0;
+        end
+        else begin
+            q <= d;
+        end 
+    end
+endmodule 
