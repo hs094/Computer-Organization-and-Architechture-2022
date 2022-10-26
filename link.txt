@@ -1,6 +1,6 @@
 https://www.ukessays.com/essays/engineering/4-bit-counter-enhancements-9152.php
 https://www.overleaf.com/3484688492rsbtqfkntdrw
-
+KGP_RISC_CPU_Documentation: https://www.overleaf.com/1293755498cfqfhdmvnpqf
 
 diff Code:-
 
