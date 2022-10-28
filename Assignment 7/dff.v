@@ -1,5 +1,4 @@
 `timescale 1ns / 1ps
-
 /* ---------------------------------------------------------
 *    # COMPUTER ORGANIZATION LABORATORY
 *    # AUTUMN SEMESTER 2022
@@ -16,12 +15,10 @@ module dff (
     input d, 
     output reg q
 );
-    
     always @(posedge clk or posedge rst) begin
         if (rst)
             q <= 1'b0;
         else
             q <= d;
-    end
-    
+    end  
 endmodule
