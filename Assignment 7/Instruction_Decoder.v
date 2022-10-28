@@ -21,6 +21,7 @@ module Instruction_Decoder(
 );
 // The module to slice the 32-bit instructuion into separate fields to decode the instruction
 // into opcode, funccode, rs, rt, shamt, imm
+    
     assign opcode   = instruction[5:0];         // Opcode
     assign funccode = instruction[31:26];       // Function code
     assign label0   = instruction[31:6];        // Jump address for 26-bit addresses
