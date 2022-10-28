@@ -21,13 +21,16 @@ module shifter(
         if (arith_or_logic) begin
             if (!shift_direction) begin
                 out = in >>> shamt;     // Arithmetic right shift
-            end else begin
+            end 
+            else begin
                 out = in;
             end
-        end else begin
+        end 
+        else begin
             if (!shift_direction) begin
                 out = in >> shamt;      // Logical right shift
-            end else begin
+            end 
+            else begin
                 out = in << shamt;      // Left shift
             end
         end
