@@ -1,20 +1,29 @@
 `timescale 1ns / 1ps
-/* ---------------------------------------------------------
-*    # COMPUTER ORGANIZATION LABORATORY
-*    # AUTUMN SEMESTER 2022
-*    # Assignment 3
-*    # Problem 1
-*    # Group No. 60
-*    # Abhay Kumar Keshari 20CS10001
-*    # Hardik Soni 20CS30023
-*---------------------------------------------------------
-*/ 
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    12:02:13 08/26/2022 
+// Design Name: 
+// Module Name:    Full_Adder 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
 module Full_Adder(
-    input a,
+	 input a,
     input b,
     input c_0,
     output S,
-    output c
+    output C
 );
 
     /*         Inputs:                      Outputs:
@@ -28,9 +37,8 @@ module Full_Adder(
     *   a = 1, b = 1, c_0 = 1     sum = 1, c = 1
     */
 
-wire c1, c2, sum
-Half_Adder ha1(a, b, sum, c1);
-Half_Adder ha2(sum, c_0, S, c2);
-assign c = c1 | c2;
-
+	wire c1, c2, sum;
+	Half_Adder ha1(a, b, sum, c1);
+	Half_Adder ha2(sum, c_0, S, c2);
+	or or1(C, c1, c2);
 endmodule

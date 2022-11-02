@@ -1,17 +1,23 @@
 `timescale 1ns / 1ps
-/* 
-# ---------------------------------------------------------
-
-    # COMPUTER ORGANIZATION LABORATORY
-    # AUTUMN SEMESTER 2022
-    # Assignment 3
-    # Problem 1
-    # Group No. 60
-    # Abhay Kumar Keshari 20CS10001
-    # Hardik Soni 20CS30023
-# ---------------------------------------------------------
-*/
-
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    13:46:21 08/26/2022 
+// Design Name: 
+// Module Name:    RCA_64_bit 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
 module RCA_64_bit(
     input [63:0] a,
     input [63:0] b,

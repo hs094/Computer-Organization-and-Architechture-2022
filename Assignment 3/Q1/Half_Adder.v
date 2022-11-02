@@ -1,17 +1,25 @@
 `timescale 1ns / 1ps
-/*
-# ---------------------------------------------------------
-    # COMPUTER ORGANIZATION LABORATORY
-    # AUTUMN SEMESTER 2022
-    # Assignment 3
-    # Problem 1
-    # Group No. 60
-    # Abhay Kumar Keshari 20CS10001
-    # Hardik Soni 20CS30023
-# ---------------------------------------------------------
-*/
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    11:44:57 08/26/2022 
+// Design Name: 
+// Module Name:    Half_Adder 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
 module Half_Adder(
-    input a,
+	 input a,
     input b,
     output s,
     output c
