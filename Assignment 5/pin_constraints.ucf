@@ -1,0 +1,10 @@
+NET "clk_high" LOC="E3" | IOSTANDARD = "LVCMOS33";
+NET "clk_high" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100MHz HIGH 50%;
+
+
+NET "rstn"			LOC=V10 | IOSTANDARD = LVCMOS33;
+NET "counter[0]"	LOC=H17 | IOSTANDARD = LVCMOS33;
+NET "counter[1]"	LOC=K15 | IOSTANDARD = LVCMOS33;
+NET "counter[2]"	LOC=J13 | IOSTANDARD = LVCMOS33;
+NET "counter[3]"	LOC=N14 | IOSTANDARD = LVCMOS33;
