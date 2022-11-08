@@ -21,9 +21,9 @@ OPCODE = {
 REFORMATS = {
     "add", "comp",
     "and", "xor",
-    "shll", "shrl",
     "shllv", "shrlv",
-    "shra", "shrav",
+    "shrav",
+    "diff",
 }
 
 FUNCODE = {
